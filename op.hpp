@@ -3,11 +3,13 @@
 
 #include "base.hpp"
 
-class Op : public Base {
+class Op : public Base { 
+private:
+double value;
     public:
         Op(double value) : Base() { }
-        virtual double evaluate() { return 0.0; }
-        virtual std::string stringify() { return ""; }
+        virtual double evaluate() { }
+        virtual std::string stringify() {  }
 };
 
 #endif //__OP_HPP__
