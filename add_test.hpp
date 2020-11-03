@@ -5,7 +5,7 @@
 
 #include "add.hpp"
 
-TEST(SubTest, addEvaluateNum) {
+TEST(AddTest, addEvaluateNum) {
     Base* left = new Op(5);
     Base* right = new Op(3);
     Add* test = new Add(left, right);
