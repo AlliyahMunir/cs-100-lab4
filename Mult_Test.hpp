@@ -22,4 +22,5 @@ TEST(MultTest, MultEvalZero) {
        EXPECT_EQ(finaltest->evaluate(),0);
    
      };
+
 #endif //__MULT_TEST_HPP__
