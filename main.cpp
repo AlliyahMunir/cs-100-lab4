@@ -1,6 +1,14 @@
 #include <iostream>
 
+
 #include "base.hpp"
+#include "op.hpp"
+#include "Rand.hpp"
+#include "Mult.hpp"
+#include "add.hpp"
+#include "div.hpp"
+#include "pow.hpp"
+#include "sub.hpp"
 #include "SevenOpMock.hpp"
 int main() {
     // This is a very basic main, and being able to correctly execute this main
