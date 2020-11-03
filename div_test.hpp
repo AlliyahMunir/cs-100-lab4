@@ -6,12 +6,12 @@
 
 TEST(DivTest, DivEvaluateZero)
 {
-	Base* test1= new Op(0);
-	Base* test2 = new Op(156);
+	Base* top= new Op(0);
+	Base* bot= new Op(1);
 
-	Base divFinal = new Div(test1, test2);
-	EXPECT_EQ(divFinal->evaluate(), 0);
-	EXPECT_EQ(divFinal->stringify(), "0.000000 / 156.000000");
+	Div* test = new Div(top, bot);
+	EXPECT_EQ(test->evaluate(), 0);
+	EXPECT_EQ(test->stringify(), "0.000000 / 1.000000");
 }
 /*TEST(DivTest, DivEvaluateWHoleNumber)
 {
