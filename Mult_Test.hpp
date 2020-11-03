@@ -3,14 +3,15 @@
 
 #include "gtest/gtest.h"
 
-#include "MultClass.hpp"
+#include "Mult.hpp"
 
-TEST(MultTest, MultEvaluateNonZero) {
-    Base* test1 = new Op(8);
-    Base* test2 = new Op(1);
-    Base multfinal = new Mult(test1, test2);
-    EXPECT_EQ(multfinal->evaluate(), 8);
-   {return test1->evaluate()*test2->evaluate();}
+TEST(MultTest, MultEvalTwoPos) {
+    Base* test1 = new Op(9);
+    Base* test2 = new Op(9);
+    Mult* finaltest = new Mult(test1,test2);
+   // test2 = test2final-> evaluate();
+    EXPECT_EQ(finaltest->evaluate(),81);
+
 };
 
 #endif //__MULT_TEST_HPP__
