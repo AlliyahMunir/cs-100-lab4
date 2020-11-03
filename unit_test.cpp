@@ -1,7 +1,6 @@
 #include "gtest/gtest.h"
 
 #include "op_test.hpp"
-<<<<<<< HEAD
 
 #include "Mult_Test.hpp"
 #include "div_test.hpp"
