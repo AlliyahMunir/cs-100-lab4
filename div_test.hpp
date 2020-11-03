@@ -13,13 +13,13 @@ TEST(DivTest, DivEvaluateZero)
 	EXPECT_EQ(test->evaluate(), 0);
 	EXPECT_EQ(test->stringify(), "0.000000 / 1.000000");
 }
-/*TEST(DivTest, DivEvaluateWHoleNumber)
+TEST(DivTest, DivEvaluatePosNum)
 {
-	Base* one = new Op(100);
-	Base* two = new Op(10);
+	Base* top= new Op(20);
+	Base* bot = new Op(5);
 
-	Div* divFinal = new Div(one, two);
-	EXPECT_EQ(divFinal->evaluate(), 10);
-	EXPECT_EQ(divFinal->stringify(), "100.000000 / 10.000000");
-}*/
+	Div* divFinal = new Div(top, bot);
+	EXPECT_EQ(divFinal->evaluate(), 4);
+	EXPECT_EQ(divFinal->stringify(), "20.000000 / 5.000000");
+}
 #endif 

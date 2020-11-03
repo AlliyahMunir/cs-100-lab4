@@ -12,5 +12,11 @@ TEST(SubTest, SubEvaluateNum) {
     EXPECT_EQ(test->evaluate(), 2);
     EXPECT_EQ(test->stringify(), "5.000000 - 3.000000");
 }
-
+TEST(SubTest, SubEvaluateSameNum) {
+    Base* left = new Op(6);
+    Base* right = new Op(6);
+    Sub* test = new Sub(left, right);
+    EXPECT_EQ(test->evaluate(), 0);
+    EXPECT_EQ(test->stringify(), "6.000000 - 6.000000");
+}
 #endif
